@@ -23,14 +23,15 @@ h5 {
 h2,
 h5,
 h6,
-a {
+a,
+button {
     font-family: Montserrat;
 }
 
 .panel {
     width: 90%;
     min-width: 300px;
-    height: 700px;
+    height: 600px;
     background-color: #fff;
     margin: 70px auto;
     box-shadow: 0 40px 40px -20px #3c7b61;
@@ -69,7 +70,7 @@ a {
     align-items: center;
     background-color: #f0fff5;
     border-radius: 5px;
-    margin: 40px 0 20px;
+    margin: 40px 0 40px;
 }
 
 .food-name-price {
@@ -93,4 +94,24 @@ a {
 #food-selection a {
     font-weight: bold;
     font-size: 12px;
+}
+
+#ready-btn {
+    background-color: #46A67E;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 20px 20px rgba(103, 189, 153, 0.2);
+    transition: .3s ease all;
+}
+
+#ready-btn:hover {
+    opacity: .8;
+    transition: .3s ease all;
+    cursor: pointer;
 }
