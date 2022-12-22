@@ -15,6 +15,8 @@ body {
     background-image: url("https://assets.codepen.io/6060109/ZigZag.png");
     background-size: cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2,
@@ -30,15 +32,37 @@ button {
     font-family: Montserrat;
 }
 
+#close-button:hover {
+    opacity: .8;
+}
+
 .panel {
     width: 90%;
     width: 350px;
     height: 650px;
     background-color: #fff;
-    margin: 70px auto;
+    margin: 70px 0;
     box-shadow: 0 40px 40px -20px #3c7b61;
     border-radius: 5px;
     position: relative;
+}
+
+.panel.left {
+    margin-right: -20px;
+}
+
+.panel.right {
+    margin-left: -20px;
+}
+
+.panel.left,
+.panel.right {
+    height: 600px;
+}
+
+.panel.center {
+    z-index: 9;
+    width: 370px;
 }
 
 #close-button {
